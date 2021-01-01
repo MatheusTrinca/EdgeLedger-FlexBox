@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/*? --- Utility Classes ---*/
+.text-primary {
+  color: #93cb52;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 2rem;
+  overflow: hidden;
+  margin: auto;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.s-heading {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+:root {
+  --transition-time: 0.2s;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  color: #fff;
+  padding: 0.5rem 2rem;
+  background-color: #93cb52;
+  border-radius: 5px;
+  transition: var(--transition-time);
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #7ab436;
+}
+
+.btn-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+.bg-primary {
+  background-color: #93cb52;
+  color: #fff;
+}
+
+/*? --- Navbar --- */
+
+#navbar {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  color: white;
+}
+
+#navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+#navbar ul li a {
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+  cursor: pointer;
+  color: #fff;
+  transition: var(--transition-time);
+}
+
+#navbar ul li a:hover {
+  background: #93cb52;
+  border-radius: 5px;
+}
+
+/*? --- Header --- */
+
+#showcase {
+  background: #333 url("../img/showcase.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*? What We Do */
+
+.items {
+  display: flex;
+  padding: 1rem;
+}
+
+.item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+.item i {
+  padding: 1rem;
+  background-color: #7ab436;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+/*? Who We Are */
+
+#who {
+  display: flex;
+}
+
+#who div {
+  flex: 1;
+}
+
+#who .who-img {
+  background: url("../img/people.jpg") no-repeat center center/cover;
+}
+
+#who .list {
+  list-style-type: none;
+  margin-top: 0.2rem;
+}
+
+#who .list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted #444;
+}
+
+/*? Our Clients */
+
+#clients .items img {
+  width: 60%;
+}
+
+/*? Contact */
+#contact {
+  display: flex;
+}
+
+#contact .contact-form,
+#contact .map {
+  flex: 1;
+}
+
+#contact .contact-form .form-group {
+  margin: 1rem 0;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+}
