@@ -1,0 +1,17 @@
+/* Align icon to left */
+#what .items .item {
+  display: flex;
+  text-align: left;
+}
+
+/* Position of icon */
+#what .items .item i {
+  align-self: center;
+  margin-right: 1.3rem;
+  margin-bottom: 0;
+}
+
+/* Tamanho do Mapa (aumentar um pouco, antes era flex:1 */
+#contact .map {
+  flex: 2;
+}
